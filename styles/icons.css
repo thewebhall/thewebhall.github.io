@@ -23,13 +23,13 @@
     transform: scale(0);
 }
 
-.icon2{
+.icon{
     width: 28px;
     object-fit: scale-down;
 
     background-color: white;
     padding: 6px;
-    border-radius: 6px;
+    border-radius: var(--bradius);
 }
 
 .landing-icon{

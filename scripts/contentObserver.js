@@ -61,9 +61,18 @@ contentObserver.addItem('basic-info', () => {
 
 contentObserver.addItem('sboxes', () => {
     document.getElementById('sboxes').classList.toggle('colorFlip-animation');
+  //  document.getElementById('portfolio').classList.toggle('colorFlip-animation');
     document.getElementById('box1').classList.toggle('pushLeft-animation');
     document.getElementById('box2').classList.toggle('pushRight-animation');
 })
+
+// contentObserver.addItem('portfolio', () => {
+//     console.log("OBSERVING PORTOFLIO!");
+//     document.getElementById('portfolio').classList.toggle('colorFlipReverse-animation');
+//     document.getElementById('out-circle').classList.toggle('fillUp-animation');
+//     animateClients(1, 6);
+// })
+
 
 contentObserver.addItem('contact-section', () => {
     //document.getElementById('contact-section').classList.toggle('colorFlipReverse-animation');

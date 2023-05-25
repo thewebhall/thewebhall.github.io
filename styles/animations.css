@@ -37,13 +37,21 @@
 
 .colorFlipReverse-animation{ animation-name: color-flip-reverse; }
 
+.fillUp-animation{ animation-name: fillUp; }
+
+.reveal-animation{ animation-name: reveal; }
+.hide-animation{ animation-name: hideA; }
+
+.rotate-animation{ animation-name: rotate; }
+.rotateBack-animation{ animation-name: rotateBack; }
+
 @keyframes color-flip {
     0%{ background-color: transparent; }
-    100%{ background-color: rgba(255, 255, 255, 0.88); }
+    100%{ background-color: white; }
 }
 
 @keyframes color-flip-reverse{
-    0%{ background-color: rgba(255, 255, 255, 0.88); }
+    0%{ background-color: white; }
     100%{ background-color: transparent; }  
 }
 
@@ -98,4 +106,40 @@
 @keyframes push-up {
     0%{ transform: translateY(80px); }
     100%{ transform: translateX(0px); }
+}
+
+@keyframes fillUp {
+    0%{
+        width: 0;
+        height: 0;
+     }
+    100%{
+        width: 100%;
+        height: 100%;
+     }
+}
+
+@keyframes reveal {
+    0%{ height: 0; padding: 0; }
+    100%{ height: 320px; padding: 12px; }
+}
+
+@keyframes hideA {
+    0%{ height: 320px; padding: 12px; }
+    100%{ height: 0; padding: 0; }
+}
+
+@keyframes rotate {
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(180deg); }
+}
+
+@keyframes rotateBack {
+    0%{ transform: rotate(180deg); }
+    100%{ transform: rotate(0); } 
+}
+
+@keyframes bubble1 {
+    0%{ transform: translate(0, 0) scale(0); }
+    100%{ transform: translate(-80px, 70px) scale(1); }
 }

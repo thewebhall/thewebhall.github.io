@@ -55,7 +55,7 @@
 .info-bubble{
     padding: 8px;   
 
-    border-radius: 6px;
+    border-radius: var(--bradius);
     background-color: white;
     color: var(--maingColorD);
 }
@@ -104,21 +104,10 @@
     width: 65%;
 }
 
-.cross-line{
-    height: 2px;
-    width: 0%;
-
-    background-color: white;
-
-    border-radius: 4px;
-}
-
 .info-box{
     width: 320px;
     background-color: var(--maingColorD);
     color: white;
-
-    border-radius: 6px;
 
     box-sizing: border-box;
     padding: 26px;
@@ -126,12 +115,18 @@
 
     /* text-align: justify; */
     transform: translateX(-500%);
+    translate: -500%, 0;
+}
+
+#box1{
+    border-radius: 6px 55px 6px 55px;
 }
 
 #box2{
     background-color: transparent;
     border: 4px solid var(--maingColorD);
     color: var(--maingColorD);
+    border-radius: 55px 6px  55px 6px;
 }
 
 #contact-text{

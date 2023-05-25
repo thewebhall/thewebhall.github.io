@@ -12,6 +12,8 @@ html, body, .app{
     --mainColorL: rgba(24, 24, 24, 0.88);
     --invertColor: rgba(255, 255, 255, 0.88);
 
+    --bradius: 6px;
+
     scroll-behavior: smooth;
 
     background-image:  url("../imgs/backgrounds/code.jpg");
@@ -27,4 +29,8 @@ span{
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+a{
+    text-decoration: none;
 }
