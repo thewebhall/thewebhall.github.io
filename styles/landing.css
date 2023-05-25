@@ -88,6 +88,21 @@ font-family: 'Share Tech Mono', monospace; */
 
 }
 
+@media(max-width: 800px) {
+    #landing-logo{
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    #landing-logo h1{
+        margin: 0;
+    }
+
+    #landing-overlay{ grid-template-rows: 410px 55px 55px 40px; }
+
+    #landing-overlay h2{ margin: 0; }
+}
+
 @media(max-width: 450px) {
     #landing-title{ font-size: 32px; }
     .landing-text{ font-size: 16px; }
