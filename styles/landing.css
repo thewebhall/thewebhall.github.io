@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Julius+Sans+One&family=Kantumruy+Pro:wght@100&family=Padyakke+Expanded+One&family=Share+Tech+Mono&display=swap');
+
+/* font-family: 'Bungee Hairline', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Kantumruy Pro', sans-serif;
+font-family: 'Padyakke Expanded One', cursive;
+font-family: 'Share Tech Mono', monospace; */
+
+#landing-section{
+    width: 100%;
+    height: 100vh;
+    
+    position: relative;
+}
+
+#landing-overlay{
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 62px 62px 50px;
+
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+
+    text-align: center;
+
+    position: absolute;
+
+    background-color: var(--mainColorL);
+}
+
+#landing-page-bcg{
+    width: 100%;
+    height: 100%;
+
+    
+    background-size: 100%;
+    background-attachment: fixed;
+
+    position: absolute;
+
+    filter: hue-rotate(0deg);
+}
+
+#landing-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.landing-title{
+    color: white;
+    font-size: 72px;
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: 600;
+}
+
+.landing-text{
+    color: white;
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 34px;
+
+    opacity: 0;
+    animation-name: push-up, fade-in;
+    animation-duration: 1.2s, 1.2s;
+    animation-delay: 0.01s, 1.2s, ;
+    animation-fill-mode: forwards;
+}
+
+#landing-overlay h2:nth-child(2){ animation-delay: 1.8s; }
+#landing-overlay h2:nth-child(3){ animation-delay: 2.5s; }
+
+@media(max-width: 1100px) {
+    #landing-title{ font-size: 44px; }
+    .landing-text{ font-size: 22px; }
+
+    #landing-page-bcg{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media(max-width: 450px) {
+    #landing-title{ font-size: 32px; }
+    .landing-text{ font-size: 16px; }
+
+    #landing-page-bcg{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

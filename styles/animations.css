@@ -1,0 +1,101 @@
+#writing-pointer{
+    /* animation-name: _blink; */
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.06s;
+}
+
+.animation{
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+.pushLeft-animation{
+    animation-delay: 0.6s;
+    animation-name: push-left;
+
+}
+
+.pushUp-animation{
+    animation-delay: 900ms;
+    animation-name: fade-in, push-up;
+}
+
+.pushRight-animation{
+    animation-delay: 0.9s;
+    animation-name: push-right;
+}
+
+.inflate-animation{ animation-name: inflate; }
+
+.fadeIn-animation{
+    animation-delay: 0.6s;
+    animation-name: fade-in;
+}
+
+.colorFlip-animation{ animation-name: color-flip; }
+
+.colorFlipReverse-animation{ animation-name: color-flip-reverse; }
+
+@keyframes color-flip {
+    0%{ background-color: transparent; }
+    100%{ background-color: rgba(255, 255, 255, 0.88); }
+}
+
+@keyframes color-flip-reverse{
+    0%{ background-color: rgba(255, 255, 255, 0.88); }
+    100%{ background-color: transparent; }  
+}
+
+
+@keyframes push-left {
+    0%{ transform: translateX(-500%); }
+    100%{ transform: translateX(0); }
+}
+
+@keyframes push-right {
+    0%{ transform: translateX(500%); }
+    100%{ transform: translateX(0); }
+}
+
+@keyframes push-up {
+    0%{ transform: translateY(90px); }
+    100%{ transform: translateX(0); }
+}
+
+@keyframes fade-in {
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+@keyframes fade-out {
+    0%{ opacity: 1; }
+    100%{ opacity: 0; }
+}
+
+
+@keyframes inflate {
+    0%{ transform: scale(0); }
+    60%{ transform: scale(1.4); }
+    85%{ transform: scale(0.9); }
+    98%{ transform: scale(1.06); }
+    100%{ transform: scale(1); }
+}
+
+@keyframes _blink {
+    0%{ opacity: 0; }
+    50%{ opacity: 1; }
+    100%{ opacity: 0; }
+}
+
+@keyframes float {
+    0%{ transform: translateY(120px); }
+    50%{ transform: translateY(150px); }
+    100%{ transform: translateY(120px); }
+}
+
+
+@keyframes push-up {
+    0%{ transform: translateY(80px); }
+    100%{ transform: translateX(0px); }
+}

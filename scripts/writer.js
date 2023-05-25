@@ -80,7 +80,8 @@ function selectNewWord(){
 
 
 async function runEverything(){
-    await writeText('landing-title', 'Welcome to Web Hall', 400);
+    await writeText('lt1', 'The Web', 200);
+    await writeText('lt2', 'Hall');
 }
 
 

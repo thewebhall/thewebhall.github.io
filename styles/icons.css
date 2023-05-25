@@ -1,0 +1,40 @@
+#arrow{
+    transform: translateY(120px);
+    animation-name: fade-in, float;
+    animation-duration: 2.4s, 2s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#arrow:hover .arrow-icon{
+    width: 95px;
+}
+
+.arrow-icon{
+    width: 90px;
+    object-fit: scale-down;
+
+    transition: ease-in-out .2s;
+}
+
+.large-icon{
+    height: 110px;
+    object-fit: scale-down;
+    transform: scale(0);
+}
+
+.icon2{
+    width: 28px;
+    object-fit: scale-down;
+
+    background-color: white;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.landing-icon{
+    width: 65px;
+    height: 65px;
+
+    object-fit: scale-down;
+}

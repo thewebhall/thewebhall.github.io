@@ -6,14 +6,15 @@ html, body, .app{
     margin: 0;
     padding: 0;
 
-    font-family: 'Consolas';
+    font-family: 'Verdana';
 
-    --color-mainA: rgba(65, 65, 72, 0.88);
-    --color-main: rgba(65, 65, 72, 1);
+    --maingColorD: rgba(24, 24, 24, 0.94);
+    --mainColorL: rgba(24, 24, 24, 0.88);
+    --invertColor: rgba(255, 255, 255, 0.88);
 
     scroll-behavior: smooth;
 
-    background-image: url('../imgs/backgrounds/templates/hex.png');
+    background-image:  url("../imgs/backgrounds/code.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
 }
@@ -22,142 +23,8 @@ strong{
     font-weight: normal;
 }
 
-#landing-section{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-#landing-overlay{
-    width: 100%;
-    height: 100%;
-
-    box-sizing: border-box;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px 62px 62px 50px;
-
+span{
+    display: flex;
     align-items: center;
-    justify-items: center;
-    align-content: center;
-
-    text-align: center;
-
-    position: absolute;
-
-    background-color: rgba(65, 65, 72, 0.85);
-}
-
-#landing-page-bcg{
-    width: 100%;
-    height: 100%;
-    background-image: url("../imgs/backgrounds/BACK.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
-
-    position: absolute;
-
-    filter: hue-rotate(0deg);
-
-    animation-name: fade-in;
-    animation-duration: 3.2s;
-    animation-fill-mode: forwards;
-}
-
-
-#landing-title{
-    color: white;
-    font-size: 72px;
-    
-    text-shadow: black 1px 2px 9px;
-}
-
-.landing-text{
-    color: white;
-    font-size: 34px;
-
-    text-shadow: black 1px 2px 9px;
-
-    opacity: 0;
-    animation-name: push-up, fade-in;
-    animation-duration: 1.2s, 1.2s;
-    animation-delay: 0.01s, 1.2s, ;
-    animation-fill-mode: forwards;
-}
-
-#landing-overlay h2:nth-child(2){ animation-delay: 1.8s; }
-#landing-overlay h2:nth-child(3){ animation-delay: 2.5s; }
-
-#arrow{
-    transform: translateY(120px);
-    animation-name: fade-in, float;
-    animation-duration: 2.4s, 2s;
-    animation-iteration-count: 1, infinite;
-    animation-timing-function: ease-in-out;
-}
-
-#arrow:hover .arrow-icon{
-    width: 95px;
-}
-
-.arrow-icon{
-    width: 90px;
-    object-fit: scale-down;
-
-    transition: ease-in-out .2s;
-}
-
-#writing-pointer{
-    animation-name: _blink;
-    animation-duration: 0.6s;
-    animation-iteration-count: infinite;
-    animation-delay: 0.06s;
-}
-
-@keyframes _blink {
-    0%{ opacity: 0; }
-    50%{ opacity: 1; }
-    100%{ opacity: 0; }
-}
-
-@keyframes float {
-    0%{ transform: translateY(120px); }
-    50%{ transform: translateY(150px); }
-    100%{ transform: translateY(120px); }
-}
-
-
-@keyframes push-up {
-    0%{ transform: translateY(80px); }
-    100%{ transform: translateX(0px); }
-}
-
-
-@keyframes huerotate {
-    0%{ filter: hue-rotate(0deg); }
-    100%{ filter: hue-rotate(360deg); }
-}
-
-
-
-@media(max-width: 1100px) {
-    #landing-title{ font-size: 44px; }
-    .landing-text{ font-size: 22px; }
-
-    #landing-page-bcg{
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-}
-
-@media(max-width: 450px) {
-    #landing-title{ font-size: 32px; }
-    .landing-text{ font-size: 16px; }
-
-    #landing-page-bcg{
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    gap: 12px;
 }
