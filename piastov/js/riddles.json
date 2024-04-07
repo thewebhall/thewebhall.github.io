@@ -1,0 +1,57 @@
+[
+    {
+        "riddleID": "R0",
+        "title": "Zaginięcie Justyny K.",
+        "clues": [
+            {
+                "clueID": "R0C0",
+                "clueData":
+                [
+                    {
+                        "type": "text",
+                        "content": "Krzysztof - \"To było w niedzielę wieczorem, kiedy ostatni raz wyszła na romperka. Później nie odbierała już telefonów. Chyba się zesrała po prostu. Kurwa to tylko example zagadka nie wiem co pisze. Śmiesznie by było jakby developer zapomniał to potem usunąć XDD. Dobra pisze pipsze pisze dupa cyce. WIENCEJ TESKTU\""
+                    },
+    
+                    {
+                        "type": "text",
+                        "content": "Grzegorz - \"Ja sobie w ogóle nie przypominam żeby była taka sytuacja aczkolwiek to może romper był po prostu i mi się pomieszało. Ten. No. To tyle by było w sumie z info do zagadki. Nic ci to nie mówi? No mi też nie.\""
+                    },
+    
+                    {
+                        "type": "img",
+                        "content": "../imgs/riddles/romper.jpg",
+                        "alt": "Zdjęcie przedstawia rompera"
+                    }
+                ]
+            },
+
+            {
+                "clueID": "R0C1",
+                "clueData":
+                [
+                    {
+                        "type": "text",
+                        "content": "Mama Justyny - \"Serio bez jaj, to tylko example data, nie chce mi się tego pisać.\""
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "riddleID": "R1",
+        "title": "Widziałeś mojego romperka?",
+        "clues": [
+            {
+                "clueID": "R1C0",
+                "clueData":
+                [
+                    {
+                        "type": "text",
+                        "content": "Krzysztof - \"Ja nie widziałem jego romperka jak coś... *Nerwowo ukrywa coś w kurtce* ... mogę już iść?\""
+                    }
+                ]
+            }
+        ]
+    }
+]

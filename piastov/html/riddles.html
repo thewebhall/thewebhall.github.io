@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Piastov </title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/containers.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+</head>
+<body>
+    <div id="page">
+        <div id="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu"></div>
+        <div id="details-box">
+            <div id="close-button" onclick="closeBox()"> X </div>
+        </div>
+
+        <div id="content">
+            <div class="retractable-container">
+                <img class="retract-button" src="../imgs/arrow.png" /> <h2 class="riddle-title"> Zaginięcie Justyny K. </h2> 
+                <div class="retracted-content hidden" id="R0">
+                    <div class="container">
+                        <button onclick="openBox('C0')">
+                            Czytaj dalej...
+                        </button>
+                    </div>
+
+                    <div class="container">
+                        <p>
+                            Mama Justyny - "Była i nie ma! To jest właśnie ten zasrany Ratzibov! Moje dziecko!..."
+                        </p>
+                        <button onclick="openBox('C1')"> Czytaj dalej...</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="retractable-container">
+                <img class="retract-button" src="../imgs/arrow.png" /> <h2 class="riddle-title"> "Tam chyba straszy!" </h2> 
+            </div>
+
+            <div class="retractable-container">
+                <img class="retract-button" src="../imgs/arrow.png" /> <h2 class="riddle-title"> "Widziałeś mojego romperka?" </h2> 
+            </div>
+        </div>
+    </div>
+    <div id="glitch"></div>
+</body>
+<script src="/js/detailsBox.js"></script>
+<script src="/js/glitch.js"></script>
+<script src="/js/menu.js"></script>
+</html>
