@@ -1,8 +1,8 @@
 var PAGES = [
-    ['/index.html', 'Główna'],
-    ['/html/game.html', 'Gra'],
-    ['/html/riddles.html', 'Tajemnice'],
-    ['/html/about.html', 'O nas']
+    ['piastov/index.html', 'Główna'],
+    ['piastov/html/game.html', 'Gra'],
+    ['piastov/html/riddles.html', 'Tajemnice'],
+    ['piastov/html/about.html', 'O nas']
 ];
 
 var MENU_VISIBLE = false;
